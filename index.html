@@ -5,43 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--
-    <script type="text/javascript" src="js/index.js"></script>
-    -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <p>PORTAFOLIO IVÁN VILLANUEVA VILLALON</p>
-    <div>
-        <button id="boton_1" onclick="mostrar_foto(1)">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
-        <img id="img_1" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
-    
-    </div>
-    
-    <div>
-        <button id="boton_2" onclick="mostrar_foto(2, 3)">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 2</button>
-       <br>
-        <iframe id="img_2" style="display:none;float: left;" src="files/Practica2/PRECIPITACIONES.pdf" width="49%" height="550px"></iframe>
-        <iframe id="img_3" style="display:none;float: right" src="files/Practica2/TEMPERATURAS.pdf" width="49%" height="550px"></iframe>
-    </div>
-    
-
-    <button id="boton_3" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
-    <img id="img_x" src="files/Practica9/Ivan_SAVI.tif">
-    
-
-    <button id="boton_4" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
-    <img id="img_4" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
-
-    <button id="boton_5" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
-    <img id="img_5" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
-
-    <button onclick="location.href='html/Ivan_SAVI.html'">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 6 - SAVI</button>
-
-    <button id="boton_7" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
-    <img id="img_7" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
-
-    <button id="boton_8" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
-    <img id="img_8" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
+    <table >
+        <caption>PORTAFOLIO IVÁN VILLANUEVA VILLALON
+            <br>
+        </caption>
+        <tr> <th>Número de la práctica</th> <th>Documentos</th> 
+        </tr>
+        <tr> <td>Práctica 1</td> <td><a id="boton_1" href="html/practica1.html" style="text-decoration: none;">Mapa de la Comunidad Valenciana</a>
+        </tr>
+        <tr> <td>Práctica 3</td> <td><a id="boton_2" href="html/practica3.html" style="text-decoration: none;">Mapas de precipitaciones y temperaturas</a></td>
+        </tr>
+        <tr> <td>Práctica 4</td> <td>46</td>
+        </tr>
+        <tr> <td>Práctica 5</td> <td><a id="boton_5" href="html/SEVERIDAD.html" style="text-decoration: none;">SEVERIDAD.tif</a></td> 
+        </tr>
+        <tr> <td>Práctica 7</td> <td><a id="boton_7" href="files/Practica7/dataframe.html" style="text-decoration: none;">Tabla de resultados y gráfica de rendimiento</a></td>
+        </tr>
+        <tr> <td>Práctica 8</td> <td><a id="boton_8" href="files/Practica8/Accidentes_Madrid_villanueva.html" style="text-decoration: none;">Mapa de contenedores y de accidentes de Madrid</a></td>
+        </tr>
+        <tr> <td>Práctica 9</td> <td><a id="boton_8" href="html/Ivan_SAVI.html" style="text-decoration: none;">Mapa de indice SAVI</a></td>
+        </tr>
+        <tr> <td>Práctica 10</td> <td>37</td> 
+        </tr>
+        </table>
 </body>
 <script>
     function mostrar_foto(id_picture, id_picture2){

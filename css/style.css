@@ -1,0 +1,15 @@
+/* tabla con estilo css*/
+body {font-family: Arial, Helvetica, sans-serif; background-color: #669;}
+
+table { font-family: «Lucida Sans Unicode», «Lucida Grande», Sans-Serif;
+font-size: 18px; margin-top: 15px; width: 90vw; height: 90vh; border-collapse: collapse; margin-left: auto; margin-right: auto;}
+
+th { font-size: 24px; font-weight: normal; padding: 8px; background: #b9c9fe;
+border-top: 4px solid #aabcfe; border-bottom: 1px solid #fff; color: #039; text-align: center;}
+
+td { padding: 8px; background: #e8edff; border-bottom: 1px solid #fff;
+color: #669; border-top: 1px solid transparent; text-align: center;}
+
+caption {
+    font-size: 20px; margin-bottom: 20px; color: #fff;
+}
