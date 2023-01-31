@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +11,54 @@
 </head>
 <body>
     <p>PORTAFOLIO IVÁN VILLANUEVA VILLALON</p>
-    <button id="boton_1" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
-    <img id="img_1" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
+    <div>
+        <button id="boton_1" onclick="mostrar_foto(1)">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
+        <img id="img_1" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
+    
+    </div>
+    
+    <div>
+        <button id="boton_2" onclick="mostrar_foto(2, 3)">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 2</button>
+       <br>
+        <iframe id="img_2" style="display:none;float: left;" src="files/Practica2/PRECIPITACIONES.pdf" width="49%" height="550px"></iframe>
+        <iframe id="img_3" style="display:none;float: right" src="files/Practica2/TEMPERATURAS.pdf" width="49%" height="550px"></iframe>
+    </div>
+    
+
+    <button id="boton_3" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
+    <img id="img_x" src="files/Practica9/Ivan_SAVI.tif">
+    
+
+    <button id="boton_4" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
+    <img id="img_4" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
+
+    <button id="boton_5" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
+    <img id="img_5" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
+
+    <button onclick="location.href='html/Ivan_SAVI.html'">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 6 - SAVI</button>
+
+    <button id="boton_7" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
+    <img id="img_7" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
+
+    <button id="boton_8" onclick="mostrar_foto()">PULSA PARA MOSTRAR LOS RESULTADOS DE LA PRÁCTICA 1</button>
+    <img id="img_8" style="display:none;" src="files/Practica1/PRACTICA_1.PNG">
 </body>
 <script>
-    function mostrar_foto(){
-    var xd = document.getElementById("img_1");
-    xd.style.display = "block";
-}
+    function mostrar_foto(id_picture, id_picture2){
+        var x = document.getElementById("img_" + id_picture);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        
+            var x2 = document.getElementById("img_" + id_picture2);
+            if (x2.style.display === "none") {
+                x2.style.display = "block";
+            } else {
+                x2.style.display = "none";
+            }
+    }
+
 </script>
 </html>
